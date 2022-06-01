@@ -345,17 +345,30 @@ image {
 .special-list-item:last-child {
     margin-right: 0px;
 }
-.special-fon::before {
-    display: flex;
-    width: 270px;
+.special-list-item::before {
+    display: block;
+    content: "";
     height: 120px;
+    margin-bottom: 30px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    content: "";
-    background-image: url("../images/antenna.svg");
-    background-size: contain;
-    
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+.icon-antenna::before {
+    background-image: url("../images/antenna.svg");
+}
+.icon-clock::before {
+    background-image: url("../images/clock.svg");
+}
+.icon-diagram::before {
+    background-image: url("../images/diagram.svg");
+}
+.icon-astronaut::before {
+    background-image: url("../images/astronaut.svg");
+}
+
 .special-list-title {
     font-weight: 700;
     font-size: 14px;
@@ -396,19 +409,19 @@ image {
     display: flex;
     width: 370px;
 }
-
 .section-comands {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: var(--secondary-bgd-color);
 }
+.comands-list {
+    display: flex;
+}
 .comands-item {
     background-color: var(--top-color);
     margin-right: 30px;
-    text-align: center;
-    
+    text-align: center;   
 }
-
 .comands-list-title {
     font-weight: 500;
     font-size: 16px;
@@ -420,12 +433,9 @@ image {
     font-size: 16px;
     line-height: 1.19;
     color: var(--header-adress-color);
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em; 
 }
-.comands-list {
-    display: flex;
-}
+
 .img-comands {
     display: block;
     max-width: 100%;
@@ -439,4 +449,37 @@ image {
     padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+.comands-list-icon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+}
+.comands-icon {
+
+    width: 20px;
+    height: 20px;
+}
+.comands-item-icon {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 10px; 
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+.comands-item-icon:last-child {
+    margin-right: 0px;
+}
+.comands-item-icon:hover,
+.comands-item-icon:focus {
+    fill: #FFFFFF;
+    background-color: var(--accent-color);
+}
+.comands-link-icon {
+    
 }
