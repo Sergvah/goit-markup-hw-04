@@ -210,23 +210,26 @@ image {
 .flex-container-our-works-item {
     margin: 15px;
     background-color: #FFFFFF;
+
     width: 370px;
 }
 .link-our-works-item {
     display: block;
     text-decoration: none;
-    border-right: 0.5px solid;
-    border-left: 0.5px solid;
-    border-bottom: 0.5px solid;
-    border-color: #E5E5E5;
+}
+.link-our-works-item:hover,
+.link-our-works-item:focus {
+
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    
 }
 .text-border {
     padding-right: 24px;
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-right: 1px solid rgba(238, 238, 238, 1); 
+    border-left: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
 }
 .img-our-works {
     display: block;
@@ -328,7 +331,7 @@ image {
     color: #FFFFFF;
 }
 
-/*---------------------СТРАНИЦА 2-HERO--------------------*/
+/*---------------------СТРАНИЦА СТУДИЯ--------------------*/
 .section-hero {
     display: block;
     background-color: var(--footer-header-bgd-color);
