@@ -189,7 +189,8 @@ image {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin-bottom: 4px;  
+    margin-bottom: 4px; 
+    color: #212121; 
 }
 .our-works-text {
     font-weight: 400;
@@ -198,7 +199,7 @@ image {
     letter-spacing: 0.03em; 
     color: var(--header-adress-color);
 }
-.our-works-list, .our-works-items, .header-list-adress, .header-list, .footer-list, .special-list, .doing-list, .comands-list {
+.link-our-works-item, .our-works-list, .our-works-items, .header-list-adress, .header-list, .footer-list, .special-list, .doing-list, .comands-list {
     list-style-type: none;
 }
 .our-works-items {
@@ -209,16 +210,23 @@ image {
 .flex-container-our-works-item {
     margin: 15px;
     background-color: #FFFFFF;
+    width: 370px;
+}
+.link-our-works-item {
+    display: block;
+    text-decoration: none;
+    border-right: 0.5px solid;
+    border-left: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: #E5E5E5;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    
 }
 .text-border {
     padding-right: 24px;
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-right: 0.5px solid;
-    border-left: 0.5px solid;
-    border-bottom: 0.5px solid;
-    border-color: #E5E5E5;
 }
 .img-our-works {
     display: block;
@@ -296,10 +304,28 @@ image {
     align-items: center;
     justify-content: center;
     height: 44px;
-    width: 44px; 
+    width: 44px;
     border-radius: 50%;
     fill: #FFFFFF;
     background-color: rgba(255, 255, 255, 0.1);
+}
+.column-footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 12px;
+}
+.title-footer {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em; 
+    color: #FFFFFF;
 }
 
 /*---------------------СТРАНИЦА 2-HERO--------------------*/
@@ -505,9 +531,7 @@ image {
     border-radius: 50%;
     fill: #AFB1B8;
 }
-.comands-icon {
-    fill: currentColor;
-}
+
 .section-regular-customers{
     padding-top: 94px;
     padding-bottom: 94px;
