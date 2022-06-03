@@ -136,14 +136,9 @@ image {
 }
 .adress-icon {
     margin-right: 10px;
- 
     fill: currentColor;
 }
-.adress-icon:hover,
-.adress-icon:focus {
-    fill: var(--accent-color);
-    
-}
+
 /*---------------------SECTION-OUR-WORKS---------------------*/
 .section-our-works {
     display: flex;
@@ -274,6 +269,37 @@ image {
 }
 .list-size {
     margin-top: 9px;
+}
+.footer-list-icon {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+
+}
+.footer-item-icon {
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 10px; 
+
+}
+.footer-item-icon:last-child {
+    margin-right: 0px;
+}
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: var(--accent-color);
+
+}
+.footer-link-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px; 
+    border-radius: 50%;
+    fill: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /*---------------------СТРАНИЦА 2-HERO--------------------*/
@@ -456,30 +482,19 @@ image {
     margin-top: 16px;
     background-color: #FFFFFF;
 }
-.comands-icon {
-
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-}
 .comands-item-icon {
     display: inline-flex;
     justify-content: center;
     margin-right: 10px; 
-
-
+    
 }
 .comands-item-icon:last-child {
     margin-right: 0px;
 }
-.comands-icon:hover,
-.comands-icon:focus {
-
-    fill: #FFFFFF;
-}
 .comands-link-icon:hover,
 .comands-link-icon:focus {
     background-color: var(--accent-color);
+    fill: #FFFFFF;
 }
 .comands-link-icon {
     display: inline-flex;
@@ -487,7 +502,11 @@ image {
     justify-content: center;
     height: 44px;
     width: 44px; 
-    border-radius: 50%;  
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+.comands-icon {
+    fill: currentColor;
 }
 .section-regular-customers{
     padding-top: 94px;
@@ -507,34 +526,26 @@ image {
     margin-top: 50px;
     background-color: #FFFFFF;
 }
-.item-regular-cusomers {
+.item-regular-customers {
     display: flex;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px; 
     margin-right: 30px;
-    justify-content: center;
-
 }
-.item-regular-cusomers:last-child {
+.item-regular-customers:last-child {
     margin-right: 0px;
 }
-.regular-customers-icon {
-    fill: #AFB1B8;
-    width: 106px;
-    height: 60px;
-}
+
 .link-regular-items {
     display: inline-flex;
     align-items: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
 }
-.regular-customers-icon:hover,
-.regular-customers-icon:focus {
+.link-regular-items:hover,
+.link-regular-items:focus {
     fill: var(--accent-color);
-
-}
-.item-regular-cusomers:hover,
-.item-regular-cusomers:focus {
     border-color: var(--accent-color);
 }
