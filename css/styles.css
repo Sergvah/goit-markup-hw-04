@@ -320,7 +320,8 @@ image {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
-    padding-top: 12px;
+
+
 }
 .title-footer {
     text-transform: uppercase;
@@ -329,15 +330,16 @@ image {
     line-height: 1.142;
     letter-spacing: 0.03em; 
     color: #FFFFFF;
+    align-self: baseline;
 }
 
 /*---------------------СТРАНИЦА СТУДИЯ--------------------*/
 .section-hero {
-    display: block;
     background-color: var(--footer-header-bgd-color);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
     min-height: 600px;
     max-width: 1600px;
     background-image: linear-gradient( to right, 
@@ -395,6 +397,7 @@ image {
 }
 .special-list-item {
     margin-right: 30px;
+    width: 270px;
 }
 .special-list-item:last-child {
     margin-right: 0px;
@@ -569,6 +572,7 @@ image {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     width: 170px;
+    outline: transparent;
     height: 92px;
     justify-content: center;
 }
